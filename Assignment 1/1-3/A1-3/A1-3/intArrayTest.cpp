@@ -1,6 +1,7 @@
-// Write a CppUnitLite test that uses new to allocate an array of 10 integers.
-// Initialize the array with the values 0 to 9. Use CHECK_EQUAL to verify the array
-// has the correct values. Use delete to deallocate the array.
+/* Assignment 1-4
+ Write a CppUnitLite test that uses new to allocate an array of 10 integers.
+ Initialize the array with the values 0 to 9. Use CHECK_EQUAL to verify the array
+ has the correct values. Use delete to deallocate the array. */
 
 #include "TestHarness.h"
 #include <iostream>
