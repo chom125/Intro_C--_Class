@@ -64,7 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				F45BC23C1809F13B00BB0A91 /* cppUnitLite */,
-				F45BC2241809EF9D00BB0A91 /* A1-3 */,
+				F45BC2241809EF9D00BB0A91 /* Assignment 1 */,
 				F45BC2231809EF9D00BB0A91 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,7 +77,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F45BC2241809EF9D00BB0A91 /* A1-3 */ = {
+		F45BC2241809EF9D00BB0A91 /* Assignment 1 */ = {
 			isa = PBXGroup;
 			children = (
 				F45BC2251809EF9D00BB0A91 /* main.cpp */,
@@ -86,6 +86,7 @@
 				F45BC241180A0BE000BB0A91 /* intArrayTest.cpp */,
 				F45BC243180A0EA500BB0A91 /* intVectorTest.cpp */,
 			);
+			name = "Assignment 1";
 			path = "A1-3";
 			sourceTree = "<group>";
 		};
