@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F4ADCA4F1804F7A400BE57B9 /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4ADCA441804F7A400BE57B9 /* Main.cpp */; };
 		F4ADCA501804F7A400BE57B9 /* Failure.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4ADCA451804F7A400BE57B9 /* Failure.cpp */; };
 		F4ADCA511804F7A400BE57B9 /* Failure.h in Headers */ = {isa = PBXBuildFile; fileRef = F4ADCA461804F7A400BE57B9 /* Failure.h */; };
 		F4ADCA521804F7A400BE57B9 /* Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4ADCA471804F7A400BE57B9 /* Test.cpp */; };
@@ -17,12 +16,10 @@
 		F4ADCA561804F7A400BE57B9 /* TestRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = F4ADCA4B1804F7A400BE57B9 /* TestRegistry.h */; };
 		F4ADCA571804F7A400BE57B9 /* TestResult.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4ADCA4C1804F7A400BE57B9 /* TestResult.cpp */; };
 		F4ADCA581804F7A400BE57B9 /* TestResult.h in Headers */ = {isa = PBXBuildFile; fileRef = F4ADCA4D1804F7A400BE57B9 /* TestResult.h */; };
-		F4ADCA591804F7A400BE57B9 /* XxxTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4ADCA4E1804F7A400BE57B9 /* XxxTest.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F4ADCA3D1804F78F00BE57B9 /* libCppUnitLite.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libCppUnitLite.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4ADCA441804F7A400BE57B9 /* Main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Main.cpp; sourceTree = "<group>"; };
 		F4ADCA451804F7A400BE57B9 /* Failure.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Failure.cpp; sourceTree = "<group>"; };
 		F4ADCA461804F7A400BE57B9 /* Failure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Failure.h; sourceTree = "<group>"; };
 		F4ADCA471804F7A400BE57B9 /* Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Test.cpp; sourceTree = "<group>"; };
@@ -32,7 +29,6 @@
 		F4ADCA4B1804F7A400BE57B9 /* TestRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRegistry.h; sourceTree = "<group>"; };
 		F4ADCA4C1804F7A400BE57B9 /* TestResult.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestResult.cpp; sourceTree = "<group>"; };
 		F4ADCA4D1804F7A400BE57B9 /* TestResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestResult.h; sourceTree = "<group>"; };
-		F4ADCA4E1804F7A400BE57B9 /* XxxTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XxxTest.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,12 +74,10 @@
 		F4ADCA5B1804F82E00BE57B9 /* source */ = {
 			isa = PBXGroup;
 			children = (
-				F4ADCA441804F7A400BE57B9 /* Main.cpp */,
 				F4ADCA451804F7A400BE57B9 /* Failure.cpp */,
 				F4ADCA471804F7A400BE57B9 /* Test.cpp */,
 				F4ADCA4A1804F7A400BE57B9 /* TestRegistry.cpp */,
 				F4ADCA4C1804F7A400BE57B9 /* TestResult.cpp */,
-				F4ADCA4E1804F7A400BE57B9 /* XxxTest.cpp */,
 			);
 			name = source;
 			sourceTree = "<group>";
@@ -154,12 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4ADCA4F1804F7A400BE57B9 /* Main.cpp in Sources */,
 				F4ADCA501804F7A400BE57B9 /* Failure.cpp in Sources */,
 				F4ADCA521804F7A400BE57B9 /* Test.cpp in Sources */,
 				F4ADCA551804F7A400BE57B9 /* TestRegistry.cpp in Sources */,
 				F4ADCA571804F7A400BE57B9 /* TestResult.cpp in Sources */,
-				F4ADCA591804F7A400BE57B9 /* XxxTest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +242,7 @@
 				F4ADCA431804F78F00BE57B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
