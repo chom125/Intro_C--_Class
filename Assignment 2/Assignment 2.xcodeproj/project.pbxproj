@@ -12,6 +12,7 @@
 		F4D77E0A1813227D003D7D7D /* libCppUnitLite.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D77E091813227D003D7D7D /* libCppUnitLite.dylib */; };
 		F4D77E0E18132483003D7D7D /* swapTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4D77E0D18132483003D7D7D /* swapTest.cpp */; };
 		F4D77E1018132C6E003D7D7D /* tableTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4D77E0F18132C6E003D7D7D /* tableTest.cpp */; };
+		F4D77E1218143DA5003D7D7D /* readStremTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4D77E1118143DA5003D7D7D /* readStremTest.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,7 @@
 		F4D77E091813227D003D7D7D /* libCppUnitLite.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libCppUnitLite.dylib; path = ../../../../../../usr/local/lib/libCppUnitLite.dylib; sourceTree = "<group>"; };
 		F4D77E0D18132483003D7D7D /* swapTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = swapTest.cpp; sourceTree = "<group>"; };
 		F4D77E0F18132C6E003D7D7D /* tableTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tableTest.cpp; sourceTree = "<group>"; };
+		F4D77E1118143DA5003D7D7D /* readStremTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = readStremTest.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				F475EFC51813218D00548214 /* Assignment_2.1 */,
 				F4D77E0D18132483003D7D7D /* swapTest.cpp */,
 				F4D77E0F18132C6E003D7D7D /* tableTest.cpp */,
+				F4D77E1118143DA5003D7D7D /* readStremTest.cpp */,
 			);
 			path = "Assignment 2";
 			sourceTree = "<group>";
@@ -130,6 +133,7 @@
 				F475EFC41813218D00548214 /* main.cpp in Sources */,
 				F4D77E0E18132483003D7D7D /* swapTest.cpp in Sources */,
 				F4D77E1018132C6E003D7D7D /* tableTest.cpp in Sources */,
+				F4D77E1218143DA5003D7D7D /* readStremTest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
