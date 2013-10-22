@@ -37,14 +37,34 @@ std::string makeCheckString(std::string input){
 	return input.substr(0, found);
 }
 
-std::stringstream sortString(std::string input){
-	std::stringstream ss(input), final;
-	//read stream into vector
-	//sort vector
-	//enter vector data into string
+std::string sortString(std::string input){
+	std::stringstream sValue(input), final;
+	std::vector<std::string> wordList;
 	
-	//return stringstream
-	return ss;
+	//read stream into vector
+	std::string word;
+	while(sValue >> word){
+		if(word == "Quit"){
+			//sort vector
+			std::sort(wordList.begin(), wordList.end());
+			break;
+		}
+		wordList.push_back(word);
+	}
+
+	//enter vector data into stringstream
+	bool firstWord = true;
+	for(int i = 0; i < wordList.size(); i++){
+		if(firstWord){
+			final << wordList[i];
+			firstWord = false;
+		}else{
+			final << " " << wordList[i];
+		}
+
+	}
+	
+	return final.str();
 }
 
 TEST(inputStreamTest, stringstream){
@@ -64,9 +84,13 @@ TEST(inputStreamTest, stringstream){
 
 TEST(inputSTreamSortTest, stringstream){
 	std::string s1 = "Peter Paul Mary Quit";
-	std::string s1Check = "Mary Paul Peter";
+	std::string s1Check = "Mary Paul Peter"; //manually sorted
 	std::string s2 = "apples bananas pears Quit";
-	std::string s2Check = "apples bananas pears";
+	std::string s2Check = "apples bananas pears"; //manually sorted
 	std::string s3 = "11235 87389 277261 denver Broncos Quit";
-	std::string s3Check = "11235 277261 87389 Broncos denver";
+	std::string s3Check = "11235 277261 87389 Broncos denver"; //manually sorted
+	
+	CHECK_EQUAL(sortString(s1), s1Check);
+	CHECK_EQUAL(sortString(s2), s2Check);
+	CHECK_EQUAL(sortString(s3), s3Check);
 }
