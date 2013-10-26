@@ -13,7 +13,7 @@ char* cat(char* s1, char* s2){
 	char* result = new char[totalSize];
 	strncpy(result, s1, strlen(s1)); //copy s1 to result first
 	strcat(result, s2); //now s1 is unaffected 
-	return result; //memory leak? is result deallocated when function loses scope?
+	return result; //memory leak? would like deallocation to happen here
 }
 
 std::string cat(std::string& s1, std::string& s2){
@@ -26,9 +26,17 @@ TEST(cStyleConcatTest, charArray){
 	char s3[] = "theother";
 	char s4[] = "stillmore";
 	
-	CHECK(strcmp(cat(s1, s2), "thisthat") == 0);
-	CHECK(strcmp(cat(s2, s3), "thattheother") == 0);
-	CHECK(strcmp(cat(s3, s4), "theotherstillmore") == 0);
+	char* s1Test = cat(s1, s2);
+	char* s2Test = cat(s2, s3);
+	char* s3Test = cat(s3, s4);
+	
+	CHECK(strcmp(s1Test, "thisthat") == 0);
+	CHECK(strcmp(s2Test, "thattheother") == 0);
+	CHECK(strcmp(s3Test, "theotherstillmore") == 0);
+	
+	delete[] s1Test; //dirty
+	delete[] s2Test;
+	delete[] s3Test;	
 }
 
 TEST(stringConcatTest, string){
