@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F48849CB1831D8DF008102EF /* CharQueue2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F48849C91831D8DF008102EF /* CharQueue2.cpp */; };
 		F4A9625A183002B500BCFB09 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4A96259183002B500BCFB09 /* main.cpp */; };
 		F4A9625C183002B500BCFB09 /* Assignment_5.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F4A9625B183002B500BCFB09 /* Assignment_5.1 */; };
 		F4A962631830036900BCFB09 /* libCppUnitLite.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A962621830036900BCFB09 /* libCppUnitLite.dylib */; };
 		F4A96265183003FC00BCFB09 /* charQueueTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4A96264183003FC00BCFB09 /* charQueueTest.cpp */; };
 		F4A96268183005DB00BCFB09 /* CharQueue1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4A96266183005DB00BCFB09 /* CharQueue1.cpp */; };
+		F4D6759418320C080061F428 /* CharQueue2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4D6759218320C080061F428 /* CharQueue2.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,8 +29,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F48849C91831D8DF008102EF /* CharQueue2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CharQueue2.cpp; path = ../CharQueue2.cpp; sourceTree = "<group>"; };
-		F48849CA1831D8DF008102EF /* CharQueue2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CharQueue2.h; path = ../CharQueue2.h; sourceTree = "<group>"; };
 		F4A96256183002B500BCFB09 /* Assignment 5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Assignment 5"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A96259183002B500BCFB09 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F4A9625B183002B500BCFB09 /* Assignment_5.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Assignment_5.1; sourceTree = "<group>"; };
@@ -38,6 +36,8 @@
 		F4A96264183003FC00BCFB09 /* charQueueTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = charQueueTest.cpp; sourceTree = "<group>"; };
 		F4A96266183005DB00BCFB09 /* CharQueue1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CharQueue1.cpp; sourceTree = "<group>"; };
 		F4A96267183005DB00BCFB09 /* CharQueue1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharQueue1.h; sourceTree = "<group>"; };
+		F4D6759218320C080061F428 /* CharQueue2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CharQueue2.cpp; sourceTree = "<group>"; };
+		F4D6759318320C080061F428 /* CharQueue2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharQueue2.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +72,8 @@
 		F4A96258183002B500BCFB09 /* Assignment 5 */ = {
 			isa = PBXGroup;
 			children = (
-				F48849C91831D8DF008102EF /* CharQueue2.cpp */,
-				F48849CA1831D8DF008102EF /* CharQueue2.h */,
+				F4D6759218320C080061F428 /* CharQueue2.cpp */,
+				F4D6759318320C080061F428 /* CharQueue2.h */,
 				F4A96259183002B500BCFB09 /* main.cpp */,
 				F4A96266183005DB00BCFB09 /* CharQueue1.cpp */,
 				F4A96267183005DB00BCFB09 /* CharQueue1.h */,
@@ -137,7 +137,7 @@
 				F4A9625A183002B500BCFB09 /* main.cpp in Sources */,
 				F4A96265183003FC00BCFB09 /* charQueueTest.cpp in Sources */,
 				F4A96268183005DB00BCFB09 /* CharQueue1.cpp in Sources */,
-				F48849CB1831D8DF008102EF /* CharQueue2.cpp in Sources */,
+				F4D6759418320C080061F428 /* CharQueue2.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
