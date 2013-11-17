@@ -1,0 +1,249 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F440F6D6183837D1006C5D41 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F440F6D5183837D1006C5D41 /* main.cpp */; };
+		F440F6D8183837D1006C5D41 /* Assignment_6.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F440F6D7183837D1006C5D41 /* Assignment_6.1 */; };
+		F440F6DF183837F5006C5D41 /* libCppUnitLite.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F440F6DE183837F5006C5D41 /* libCppUnitLite.dylib */; };
+		F440F6E118383926006C5D41 /* histogramTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F440F6E018383926006C5D41 /* histogramTest.cpp */; };
+		F440F6E318383AC0006C5D41 /* bankTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F440F6E218383AC0006C5D41 /* bankTest.cpp */; };
+		F440F6E618383BA1006C5D41 /* histogram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F440F6E418383BA1006C5D41 /* histogram.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F440F6D0183837D1006C5D41 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				F440F6D8183837D1006C5D41 /* Assignment_6.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F440F6D2183837D1006C5D41 /* Assignment 6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Assignment 6"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F440F6D5183837D1006C5D41 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F440F6D7183837D1006C5D41 /* Assignment_6.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Assignment_6.1; sourceTree = "<group>"; };
+		F440F6DE183837F5006C5D41 /* libCppUnitLite.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libCppUnitLite.dylib; path = ../../../../../../usr/local/lib/libCppUnitLite.dylib; sourceTree = "<group>"; };
+		F440F6E018383926006C5D41 /* histogramTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = histogramTest.cpp; sourceTree = "<group>"; };
+		F440F6E218383AC0006C5D41 /* bankTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bankTest.cpp; sourceTree = "<group>"; };
+		F440F6E418383BA1006C5D41 /* histogram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = histogram.cpp; sourceTree = "<group>"; };
+		F440F6E518383BA1006C5D41 /* histogram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = histogram.h; sourceTree = "<group>"; };
+		F440F6E7183842F9006C5D41 /* RoM.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RoM.txt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F440F6CF183837D1006C5D41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F440F6DF183837F5006C5D41 /* libCppUnitLite.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F440F6C9183837D1006C5D41 = {
+			isa = PBXGroup;
+			children = (
+				F440F6DE183837F5006C5D41 /* libCppUnitLite.dylib */,
+				F440F6D4183837D1006C5D41 /* Assignment 6 */,
+				F440F6D3183837D1006C5D41 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F440F6D3183837D1006C5D41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F440F6D2183837D1006C5D41 /* Assignment 6 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F440F6D4183837D1006C5D41 /* Assignment 6 */ = {
+			isa = PBXGroup;
+			children = (
+				F440F6D5183837D1006C5D41 /* main.cpp */,
+				F440F6E018383926006C5D41 /* histogramTest.cpp */,
+				F440F6E418383BA1006C5D41 /* histogram.cpp */,
+				F440F6E518383BA1006C5D41 /* histogram.h */,
+				F440F6E218383AC0006C5D41 /* bankTest.cpp */,
+				F440F6E7183842F9006C5D41 /* RoM.txt */,
+				F440F6D7183837D1006C5D41 /* Assignment_6.1 */,
+			);
+			path = "Assignment 6";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F440F6D1183837D1006C5D41 /* Assignment 6 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F440F6DB183837D1006C5D41 /* Build configuration list for PBXNativeTarget "Assignment 6" */;
+			buildPhases = (
+				F440F6CE183837D1006C5D41 /* Sources */,
+				F440F6CF183837D1006C5D41 /* Frameworks */,
+				F440F6D0183837D1006C5D41 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Assignment 6";
+			productName = "Assignment 6";
+			productReference = F440F6D2183837D1006C5D41 /* Assignment 6 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F440F6CA183837D1006C5D41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Steve Minor";
+			};
+			buildConfigurationList = F440F6CD183837D1006C5D41 /* Build configuration list for PBXProject "Assignment 6" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F440F6C9183837D1006C5D41;
+			productRefGroup = F440F6D3183837D1006C5D41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F440F6D1183837D1006C5D41 /* Assignment 6 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F440F6CE183837D1006C5D41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F440F6D6183837D1006C5D41 /* main.cpp in Sources */,
+				F440F6E118383926006C5D41 /* histogramTest.cpp in Sources */,
+				F440F6E318383AC0006C5D41 /* bankTest.cpp in Sources */,
+				F440F6E618383BA1006C5D41 /* histogram.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F440F6D9183837D1006C5D41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F440F6DA183837D1006C5D41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F440F6DC183837D1006C5D41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../CppUnitLite\"";
+			};
+			name = Debug;
+		};
+		F440F6DD183837D1006C5D41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../CppUnitLite\"";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F440F6CD183837D1006C5D41 /* Build configuration list for PBXProject "Assignment 6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F440F6D9183837D1006C5D41 /* Debug */,
+				F440F6DA183837D1006C5D41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F440F6DB183837D1006C5D41 /* Build configuration list for PBXNativeTarget "Assignment 6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F440F6DC183837D1006C5D41 /* Debug */,
+				F440F6DD183837D1006C5D41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F440F6CA183837D1006C5D41 /* Project object */;
+}
