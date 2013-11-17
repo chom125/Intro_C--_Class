@@ -16,11 +16,9 @@
 #include "TestHarness.h"
 #include "histogram.h"
 #include <iostream>
-#include <locale>
-#include <fstream>
+#include <locale> //isdigit(), isaplha(), isspace(), ispunct()
+#include <fstream> //file input
 #include <string>
-
-#include <unistd.h>
 
 using namespace std;
 
@@ -48,18 +46,38 @@ void parseAdd(const std::string& s, Histogram& h){
 }
 
 TEST(histogramTest, histogram){
-	Histogram hist;
+	Histogram hist, hist2;
 	char c;
 	
-	//TODO: make the path to RoM.txt an argument in main
-	fstream file("/Users/steveminor/Documents/C++/Intro_C++_Class/Assignment 6/Assignment 6/RoM.txt", fstream::in);
+	fstream file("/Users/steveminor/Documents/C++/Intro_C++_Class/Assignment 6/Assignment 6/hist.txt", fstream::in);
 	if(file.is_open()){
 		while((c = file.get()) != -1){
 			parseAdd(string(&c), hist);
 		}
 	}
 	
-	hist.print();
+	fstream file2("/Users/steveminor/Documents/C++/Intro_C++_Class/Assignment 6/Assignment 6/hist1.txt", fstream::in);
+	if(file2.is_open()){
+		while((c = file2.get()) != -1){
+			parseAdd(string(&c), hist2);
+		}
+	}
+	
+	//hist
+	CHECK_EQUAL(hist.getDigitCount(), 10);
+	CHECK_EQUAL(hist.getLetterCount(), 52);
+	CHECK_EQUAL(hist.getPunctuationCount(), 9);
+	CHECK_EQUAL(hist.getWhitespaceCount(), 3);
+	
+	//hist2
+	CHECK_EQUAL(hist2.getDigitCount(), 6);
+	CHECK_EQUAL(hist2.getLetterCount(), 9);
+	CHECK_EQUAL(hist2.getPunctuationCount(),12);
+	CHECK_EQUAL(hist2.getWhitespaceCount(), 10);
+	
+	// uncomment to see output
+	// cout << hist;
+	// cout << hist2;
 	
 	file.close();
 }

@@ -29,6 +29,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F42A82951839787D00CEAB95 /* hist1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hist1.txt; sourceTree = "<group>"; };
 		F440F6D2183837D1006C5D41 /* Assignment 6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Assignment 6"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F440F6D5183837D1006C5D41 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F440F6D7183837D1006C5D41 /* Assignment_6.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Assignment_6.1; sourceTree = "<group>"; };
@@ -37,7 +38,7 @@
 		F440F6E218383AC0006C5D41 /* bankTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bankTest.cpp; sourceTree = "<group>"; };
 		F440F6E418383BA1006C5D41 /* histogram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = histogram.cpp; sourceTree = "<group>"; };
 		F440F6E518383BA1006C5D41 /* histogram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = histogram.h; sourceTree = "<group>"; };
-		F440F6E7183842F9006C5D41 /* RoM.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RoM.txt; sourceTree = "<group>"; };
+		F440F6E7183842F9006C5D41 /* hist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hist.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +78,9 @@
 				F440F6E418383BA1006C5D41 /* histogram.cpp */,
 				F440F6E518383BA1006C5D41 /* histogram.h */,
 				F440F6E218383AC0006C5D41 /* bankTest.cpp */,
-				F440F6E7183842F9006C5D41 /* RoM.txt */,
+				F440F6E7183842F9006C5D41 /* hist.txt */,
 				F440F6D7183837D1006C5D41 /* Assignment_6.1 */,
+				F42A82951839787D00CEAB95 /* hist1.txt */,
 			);
 			path = "Assignment 6";
 			sourceTree = "<group>";
@@ -242,6 +244,7 @@
 				F440F6DD183837D1006C5D41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

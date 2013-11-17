@@ -18,10 +18,10 @@ public:
 	Histogram();
 	
 	//getters
-	int getLetterCount();
-	int getDigitCount();
-	int	getPunctuationCount();
-	int getWhitespaceCount();
+	int getLetterCount() const;
+	int getDigitCount() const;
+	int getPunctuationCount() const;
+	int getWhitespaceCount() const;
 	
 	//setters
 	void addLetter();
@@ -37,6 +37,8 @@ private:
 	unsigned int punctuationCount;
 	unsigned int whitespaceCount;
 };
+
+std::ostream& operator<<(std::ostream& os, const Histogram& h);
 
 
 #endif /* defined(__Assignment_6__histogram__) */
