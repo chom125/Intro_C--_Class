@@ -19,7 +19,7 @@ public:
 	Account(float startingBalance);
 	float getBalance();
 	void addTransaction(Transaction t);
-	void printTransactions();
+	static void printTransactions(std::string name, Account* _account);
 private:
 	std::vector <Transaction> transactions;
 	void calculateBalance();

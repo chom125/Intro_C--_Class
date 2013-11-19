@@ -32,11 +32,13 @@ public:
 			 Address _address,
 			 float startingChecking = 0,
 			 float startingSavings = 0);
+	Address getAddress();
 	std::string getName();
 	std::string getFirstName();
 	std::string getLastName();
 	
-	Account* getAccount(std::string name);
+	static Account* getAccount(std::string name, Customer& cust);
+	static void printInfo(const Customer& cust);
 private:
 	std::string firstName;
 	std::string lastName;

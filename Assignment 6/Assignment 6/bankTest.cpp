@@ -24,12 +24,23 @@ TEST(bankTest, Banking){
 	Customer sm("Steve", "Minor", testAddress1);
 	Customer hw("Hillary", "Warden", testAddress1);
 	
-	Account* smchk = sm.getAccount("checking");
-//	Account* smsv = sm.getAccount("savings");
+	Account* smchk = Customer::getAccount("checking", sm);
+	Account* smsv = Customer::getAccount("savings", sm);
 	smchk->addTransaction(Transaction("hillary", "steve", -50));
+	smchk->addTransaction(Transaction("steve",	"hillary", 50));
+	smchk->addTransaction(Transaction("hillary", "steve", -100));
+	smchk->addTransaction(Transaction("steve", "hillary", 75));
 	smchk->addTransaction(Transaction("hillary", "steve", -50));
-	smchk->addTransaction(Transaction("hillary", "steve", -50));
-	smchk->addTransaction(Transaction("hillary", "steve", -50));
-	smchk->addTransaction(Transaction("hillary", "steve", -50));
-	smchk->printTransactions();
+	
+	smsv->addTransaction(Transaction("steve", "nordstrom", 100));
+	smsv->addTransaction(Transaction("steve", "nordstrom", 100));
+	smsv->addTransaction(Transaction("steve", "nordstrom", 100));
+	smsv->addTransaction(Transaction("steve", "nordstrom", 100));
+	Customer::printInfo(sm);
+	Account::printTransactions("checking", smchk);
+	Account::printTransactions("savings", smsv);
+	
+	Customer& sm_ref = sm;
+	//cout << sm_ref;
+	
 }

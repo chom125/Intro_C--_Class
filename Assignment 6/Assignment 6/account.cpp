@@ -22,16 +22,15 @@ void Account::addTransaction(Transaction t){
 	balance += t.getAmount();
 };
 
-void Account::printTransactions(){
-//	std::cout << "Balance for account:" << name << std::endl;
-	std::cout << "Balance for account:" << std::endl;
+void Account::printTransactions(std::string name, Account* _account){
+	std::cout << "Balance for account: " << name << std::endl;
 	std::cout << std::string(50, '*') << std::endl;
 	std::cout << "to\t\t|from\t\t|amount\t\t|location" << std::endl;
-	for(std::vector<Transaction>::iterator i = transactions.begin(); i != transactions.end(); i++){
+	for(std::vector<Transaction>::iterator i = _account->transactions.begin(); i != _account->transactions.end(); i++){
 		std::cout << i->getTo() << "\t\t" << i->getFrom() << "\t\t" << i->getAmount() << "\t\t" << i->getLocation() << std::endl;
 	}
 	std::cout << std::string(50, '*') << std::endl;
-	std::cout << "Ending balance: " << balance << std::endl;
+	std::cout << "Ending balance: " << _account->getBalance() << std::endl;
 };
 
 
