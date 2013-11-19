@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F42A8298183B130100CEAB95 /* transaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F42A8296183B130100CEAB95 /* transaction.cpp */; };
+		F42A829B183B144300CEAB95 /* account.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F42A8299183B144300CEAB95 /* account.cpp */; };
+		F42A829E183B154500CEAB95 /* customer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F42A829C183B154400CEAB95 /* customer.cpp */; };
 		F440F6D6183837D1006C5D41 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F440F6D5183837D1006C5D41 /* main.cpp */; };
 		F440F6D8183837D1006C5D41 /* Assignment_6.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F440F6D7183837D1006C5D41 /* Assignment_6.1 */; };
 		F440F6DF183837F5006C5D41 /* libCppUnitLite.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F440F6DE183837F5006C5D41 /* libCppUnitLite.dylib */; };
@@ -30,6 +33,12 @@
 
 /* Begin PBXFileReference section */
 		F42A82951839787D00CEAB95 /* hist1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hist1.txt; sourceTree = "<group>"; };
+		F42A8296183B130100CEAB95 /* transaction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = transaction.cpp; sourceTree = "<group>"; };
+		F42A8297183B130100CEAB95 /* transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transaction.h; sourceTree = "<group>"; };
+		F42A8299183B144300CEAB95 /* account.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = account.cpp; sourceTree = "<group>"; };
+		F42A829A183B144300CEAB95 /* account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = account.h; sourceTree = "<group>"; };
+		F42A829C183B154400CEAB95 /* customer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = customer.cpp; sourceTree = "<group>"; };
+		F42A829D183B154400CEAB95 /* customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customer.h; sourceTree = "<group>"; };
 		F440F6D2183837D1006C5D41 /* Assignment 6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Assignment 6"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F440F6D5183837D1006C5D41 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F440F6D7183837D1006C5D41 /* Assignment_6.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Assignment_6.1; sourceTree = "<group>"; };
@@ -78,6 +87,12 @@
 				F440F6E418383BA1006C5D41 /* histogram.cpp */,
 				F440F6E518383BA1006C5D41 /* histogram.h */,
 				F440F6E218383AC0006C5D41 /* bankTest.cpp */,
+				F42A829C183B154400CEAB95 /* customer.cpp */,
+				F42A829D183B154400CEAB95 /* customer.h */,
+				F42A8299183B144300CEAB95 /* account.cpp */,
+				F42A829A183B144300CEAB95 /* account.h */,
+				F42A8296183B130100CEAB95 /* transaction.cpp */,
+				F42A8297183B130100CEAB95 /* transaction.h */,
 				F440F6E7183842F9006C5D41 /* hist.txt */,
 				F440F6D7183837D1006C5D41 /* Assignment_6.1 */,
 				F42A82951839787D00CEAB95 /* hist1.txt */,
@@ -140,6 +155,9 @@
 				F440F6E118383926006C5D41 /* histogramTest.cpp in Sources */,
 				F440F6E318383AC0006C5D41 /* bankTest.cpp in Sources */,
 				F440F6E618383BA1006C5D41 /* histogram.cpp in Sources */,
+				F42A8298183B130100CEAB95 /* transaction.cpp in Sources */,
+				F42A829B183B144300CEAB95 /* account.cpp in Sources */,
+				F42A829E183B154500CEAB95 /* customer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
