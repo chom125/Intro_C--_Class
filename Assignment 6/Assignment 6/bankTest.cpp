@@ -36,11 +36,10 @@ TEST(bankTest, Banking){
 	smsv->addTransaction(Transaction("steve", "nordstrom", 100));
 	smsv->addTransaction(Transaction("steve", "nordstrom", 100));
 	smsv->addTransaction(Transaction("steve", "nordstrom", 100));
-	Customer::printInfo(sm);
-	Account::printTransactions("checking", smchk);
-	Account::printTransactions("savings", smsv);
+//	Customer::printInfo(sm);
+//	Account::printTransactions("checking", smchk);
+//	Account::printTransactions("savings", smsv);
 	
-	Customer& sm_ref = sm;
-	//cout << sm_ref;
+	cout << sm;
 	
 }

@@ -47,4 +47,6 @@ private:
 	SavingsAccount savings;
 };
 
+std::ostream& operator<<(std::ostream& os, Customer& cust);
+
 #endif /* defined(__Assignment_6__customer__) */
