@@ -65,10 +65,11 @@ void Customer::printInfo(const Customer& cust){
 };
 
 std::ostream& operator<<(std::ostream& os, Customer& cust){
-    std::cout << "Here" << std::endl;
-	Customer::printInfo(cust);	
+	Customer::printInfo(cust);
+	
 	Account* checking = Customer::getAccount("checking", cust);
 	Account* savings = Customer::getAccount("savings", cust);
+	
 	Account::printTransactions("checking", checking);
 	Account::printTransactions("savings", savings);
 	return os;

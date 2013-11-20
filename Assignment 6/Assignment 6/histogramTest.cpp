@@ -54,6 +54,8 @@ TEST(histogramTest, histogram){
 		while((c = file.get()) != -1){
 			parseAdd(string(&c), hist);
 		}
+	}else{
+		std::cout << "Unable to open hist.txt" << std::endl;
 	}
 	
 	fstream file2("/Users/steveminor/Documents/C++/Intro_C++_Class/Assignment 6/Assignment 6/hist1.txt", fstream::in);
@@ -61,6 +63,8 @@ TEST(histogramTest, histogram){
 		while((c = file2.get()) != -1){
 			parseAdd(string(&c), hist2);
 		}
+	}else{
+		std::cout << "Unable to open hist1.txt" << std::endl;
 	}
 	
 	//hist
@@ -80,4 +84,5 @@ TEST(histogramTest, histogram){
 	// cout << hist2;
 	
 	file.close();
+	file2.close();
 }

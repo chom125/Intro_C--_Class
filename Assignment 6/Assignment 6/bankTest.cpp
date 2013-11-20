@@ -26,20 +26,35 @@ TEST(bankTest, Banking){
 	
 	Account* smchk = Customer::getAccount("checking", sm);
 	Account* smsv = Customer::getAccount("savings", sm);
+	
+	CHECK_EQUAL(smchk->getBalance(), 0);
+	CHECK_EQUAL(smsv->getBalance(), 0);
+	
 	smchk->addTransaction(Transaction("hillary", "steve", -50));
-	smchk->addTransaction(Transaction("steve",	"hillary", 50));
+	CHECK_EQUAL(smchk->getBalance(), -50);
+	smchk->addTransaction(Transaction("steve", "hillary", 300));
+	CHECK_EQUAL(smchk->getBalance(), 250);
+	smchk->addTransaction(Transaction("steve", "hillary", 50));
+	CHECK_EQUAL(smchk->getBalance(), 300);
 	smchk->addTransaction(Transaction("hillary", "steve", -100));
+	CHECK_EQUAL(smchk->getBalance(), 200);
 	smchk->addTransaction(Transaction("steve", "hillary", 75));
-	smchk->addTransaction(Transaction("hillary", "steve", -50));
+	CHECK_EQUAL(smchk->getBalance(), 275);
+	smchk->addTransaction(Transaction("hillary", "steve", -50));	
+	CHECK_EQUAL(smchk->getBalance(), 225);
 	
 	smsv->addTransaction(Transaction("steve", "nordstrom", 100));
+	CHECK_EQUAL(smsv->getBalance(), 100);
 	smsv->addTransaction(Transaction("steve", "nordstrom", 100));
+	CHECK_EQUAL(smsv->getBalance(), 200);
 	smsv->addTransaction(Transaction("steve", "nordstrom", 100));
+	CHECK_EQUAL(smsv->getBalance(), 300);
 	smsv->addTransaction(Transaction("steve", "nordstrom", 100));
-//	Customer::printInfo(sm);
-//	Account::printTransactions("checking", smchk);
-//	Account::printTransactions("savings", smsv);
+	CHECK_EQUAL(smsv->getBalance(), 400);
+	smsv->addTransaction(Transaction("drug dealer", "steve", -400));
+	CHECK_EQUAL(smsv->getBalance(), 0);
 	
-	cout << sm;
+	// uncomment to see output
+	//cout << sm;
 	
 }
