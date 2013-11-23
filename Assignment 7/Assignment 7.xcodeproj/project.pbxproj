@@ -1,0 +1,237 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F47C422C184110C000F95D8A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F47C422B184110C000F95D8A /* main.cpp */; };
+		F47C422E184110C000F95D8A /* Assignment_7.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F47C422D184110C000F95D8A /* Assignment_7.1 */; };
+		F47C4235184110E200F95D8A /* libCppUnitLite.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F47C4234184110E200F95D8A /* libCppUnitLite.dylib */; };
+		F47C42381841128500F95D8A /* probe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F47C42361841128500F95D8A /* probe.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F47C4226184110C000F95D8A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				F47C422E184110C000F95D8A /* Assignment_7.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F47C4228184110C000F95D8A /* Assignment 7 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Assignment 7"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F47C422B184110C000F95D8A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F47C422D184110C000F95D8A /* Assignment_7.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Assignment_7.1; sourceTree = "<group>"; };
+		F47C4234184110E200F95D8A /* libCppUnitLite.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libCppUnitLite.dylib; path = ../../../../../../usr/local/lib/libCppUnitLite.dylib; sourceTree = "<group>"; };
+		F47C42361841128500F95D8A /* probe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = probe.cpp; sourceTree = "<group>"; };
+		F47C42371841128500F95D8A /* probe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = probe.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F47C4225184110C000F95D8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F47C4235184110E200F95D8A /* libCppUnitLite.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F47C421F184110C000F95D8A = {
+			isa = PBXGroup;
+			children = (
+				F47C4234184110E200F95D8A /* libCppUnitLite.dylib */,
+				F47C422A184110C000F95D8A /* Assignment 7 */,
+				F47C4229184110C000F95D8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F47C4229184110C000F95D8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F47C4228184110C000F95D8A /* Assignment 7 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F47C422A184110C000F95D8A /* Assignment 7 */ = {
+			isa = PBXGroup;
+			children = (
+				F47C422B184110C000F95D8A /* main.cpp */,
+				F47C42361841128500F95D8A /* probe.cpp */,
+				F47C42371841128500F95D8A /* probe.h */,
+				F47C422D184110C000F95D8A /* Assignment_7.1 */,
+			);
+			path = "Assignment 7";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F47C4227184110C000F95D8A /* Assignment 7 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F47C4231184110C000F95D8A /* Build configuration list for PBXNativeTarget "Assignment 7" */;
+			buildPhases = (
+				F47C4224184110C000F95D8A /* Sources */,
+				F47C4225184110C000F95D8A /* Frameworks */,
+				F47C4226184110C000F95D8A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Assignment 7";
+			productName = "Assignment 7";
+			productReference = F47C4228184110C000F95D8A /* Assignment 7 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F47C4220184110C000F95D8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Steve Minor";
+			};
+			buildConfigurationList = F47C4223184110C000F95D8A /* Build configuration list for PBXProject "Assignment 7" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F47C421F184110C000F95D8A;
+			productRefGroup = F47C4229184110C000F95D8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F47C4227184110C000F95D8A /* Assignment 7 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F47C4224184110C000F95D8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F47C422C184110C000F95D8A /* main.cpp in Sources */,
+				F47C42381841128500F95D8A /* probe.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F47C422F184110C000F95D8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F47C4230184110C000F95D8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F47C4232184110C000F95D8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../CppUnitLite\"";
+			};
+			name = Debug;
+		};
+		F47C4233184110C000F95D8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../CppUnitLite\"";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F47C4223184110C000F95D8A /* Build configuration list for PBXProject "Assignment 7" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F47C422F184110C000F95D8A /* Debug */,
+				F47C4230184110C000F95D8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F47C4231184110C000F95D8A /* Build configuration list for PBXNativeTarget "Assignment 7" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F47C4232184110C000F95D8A /* Debug */,
+				F47C4233184110C000F95D8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F47C4220184110C000F95D8A /* Project object */;
+}
