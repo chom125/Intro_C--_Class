@@ -8,36 +8,48 @@
 
 #include "probe.h"
 
-unsigned int Probe::count = 0;
-
 void Probe::increment(){
-	count++;
+	total++;
+	current++;
 }
 
 void Probe::decrement(){
-	count--;
+	current--;
 }
 
-Probe::Probe(){
-	increment();
-}
+//probe can't have static member data
+//Probe::Probe(){
+//	//increment();
+//}
+//
+//Probe::Probe(Probe& p){
+//	increment();
+//}
+//
+//Probe::~Probe(){
+//	//decrement();
+//}
 
-Probe::Probe(Probe& p){
-	increment();
-}
-
-Probe::~Probe(){
-	decrement();
-}
-
+// keep for demonstrative purposes but do not use
 void Probe::operator++(int i){
 	increment();
 }
 
+// keep for demonstrative purposes but do not use
 void Probe::operator++(){
-	++count;
+	++total;
+	++current;
 }
 
+// keep for demonstrative purposes but do not use
 void Probe::operator--(int i){
 	decrement();
+}
+
+unsigned int Probe::getTotal(){
+	return total;
+}
+
+unsigned int Probe::getCurrent(){
+	return current;
 }

@@ -11,6 +11,7 @@
 		F47C422E184110C000F95D8A /* Assignment_7.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F47C422D184110C000F95D8A /* Assignment_7.1 */; };
 		F47C4235184110E200F95D8A /* libCppUnitLite.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F47C4234184110E200F95D8A /* libCppUnitLite.dylib */; };
 		F47C42381841128500F95D8A /* probe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F47C42361841128500F95D8A /* probe.cpp */; };
+		F47C423A184119D100F95D8A /* probeTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F47C4239184119D100F95D8A /* probeTest.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 		F47C4234184110E200F95D8A /* libCppUnitLite.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libCppUnitLite.dylib; path = ../../../../../../usr/local/lib/libCppUnitLite.dylib; sourceTree = "<group>"; };
 		F47C42361841128500F95D8A /* probe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = probe.cpp; sourceTree = "<group>"; };
 		F47C42371841128500F95D8A /* probe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = probe.h; sourceTree = "<group>"; };
+		F47C4239184119D100F95D8A /* probeTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = probeTest.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				F47C422B184110C000F95D8A /* main.cpp */,
+				F47C4239184119D100F95D8A /* probeTest.cpp */,
 				F47C42361841128500F95D8A /* probe.cpp */,
 				F47C42371841128500F95D8A /* probe.h */,
 				F47C422D184110C000F95D8A /* Assignment_7.1 */,
@@ -128,6 +131,7 @@
 			files = (
 				F47C422C184110C000F95D8A /* main.cpp in Sources */,
 				F47C42381841128500F95D8A /* probe.cpp in Sources */,
+				F47C423A184119D100F95D8A /* probeTest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +199,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../CppUnitLite\"";
@@ -205,6 +210,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../CppUnitLite\"";

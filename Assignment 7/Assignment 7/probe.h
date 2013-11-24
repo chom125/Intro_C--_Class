@@ -13,9 +13,9 @@
 
 class Probe{
 public:
-	Probe();
-	Probe(Probe& p);
-	~Probe();
+//	Probe();
+//	Probe(Probe& p);
+//	~Probe();
 	void increment();
 	void decrement();
 	
@@ -23,9 +23,11 @@ public:
 	void operator++(); //++probe
 	void operator--(int i);
 	
-	unsigned static int getCount();
+	unsigned int getTotal();
+	unsigned int getCurrent();
 private:
-	unsigned static int count;
+	unsigned int total;
+	unsigned int current;
 };
 
 #endif /* defined(__Assignment_7__probe__) */
