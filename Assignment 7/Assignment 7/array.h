@@ -20,6 +20,7 @@ public:
 	~Array();
 	
 	int& operator[] (int x);
+	int size();
 	
 	void putAt(int index, int value); // insert the value at index. The array must expand to accommodate the new element.
 	void writeAt(int index, int value); // overwrite the value at index.	
@@ -28,5 +29,5 @@ public:
 };
 
 
-
+std::ostream& operator<<(std::ostream& os, Array& ar);
 #endif /* defined(__Assignment_7__array__) */

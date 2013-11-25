@@ -38,7 +38,7 @@
 
 TEST(arrayTest, Array){
 	Array a;
-	a.writeAt(0, 5);
+	a.writeAt(0, 6);
 	
-	std::cout << a[0];
+	std::cout << a;
 };
