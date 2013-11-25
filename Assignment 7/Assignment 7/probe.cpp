@@ -53,3 +53,9 @@ unsigned int Probe::getTotal(){
 unsigned int Probe::getCurrent(){
 	return current;
 }
+
+std::ostream& operator<<(std::ostream& os, Probe& p){
+	std::cout << "total instances: " << p.getTotal() << std::endl;
+	std::cout << "current instances: " << p.getCurrent() << std::endl;
+	return os;
+};

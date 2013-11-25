@@ -30,4 +30,6 @@ private:
 	unsigned int current;
 };
 
+std::ostream& operator<<(std::ostream& os, Probe& p);
+
 #endif /* defined(__Assignment_7__probe__) */
