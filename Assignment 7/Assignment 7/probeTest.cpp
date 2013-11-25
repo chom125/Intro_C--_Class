@@ -1,3 +1,20 @@
+// Define a probe that can be inserted into a class or function as a test coverage
+// device. For a class, the probe is to keep track of the number of instances of the
+// class that exist and how many have been created since the program was started. For
+// a function, the probe is to track how many times the function is called.
+//
+// In either case, the probe is to respond with the appropriate tracking information
+// when the class instance or function containing the probe is queried. It will be
+// necessary to figure out the best way to present the query.
+//
+// Demonstrate your probe on a class with multiple instances and on several functions.
+// The functions should not be class member functions.
+//
+// Note: the data and function members of the probe cannot be static. The probe itself
+// must be declared static in the probed class or function.
+// Overload the ostream operator to support printing of information of the class Probe.
+
+
 #include "TestHarness.h"
 #include "probe.h"
 #include <iostream>

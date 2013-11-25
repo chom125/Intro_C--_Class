@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F41F61B51842D510009562DF /* arrayTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F41F61B41842D510009562DF /* arrayTest.cpp */; };
+		F41F61B81842D5A0009562DF /* array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F41F61B61842D5A0009562DF /* array.cpp */; };
 		F47C422C184110C000F95D8A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F47C422B184110C000F95D8A /* main.cpp */; };
 		F47C422E184110C000F95D8A /* Assignment_7.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F47C422D184110C000F95D8A /* Assignment_7.1 */; };
 		F47C4235184110E200F95D8A /* libCppUnitLite.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F47C4234184110E200F95D8A /* libCppUnitLite.dylib */; };
@@ -28,6 +30,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F41F61B41842D510009562DF /* arrayTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = arrayTest.cpp; sourceTree = "<group>"; };
+		F41F61B61842D5A0009562DF /* array.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = array.cpp; sourceTree = "<group>"; };
+		F41F61B71842D5A0009562DF /* array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = array.h; sourceTree = "<group>"; };
 		F47C4228184110C000F95D8A /* Assignment 7 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Assignment 7"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47C422B184110C000F95D8A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F47C422D184110C000F95D8A /* Assignment_7.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Assignment_7.1; sourceTree = "<group>"; };
@@ -72,6 +77,9 @@
 				F47C422B184110C000F95D8A /* main.cpp */,
 				F47C4239184119D100F95D8A /* probeTest.cpp */,
 				F47C42361841128500F95D8A /* probe.cpp */,
+				F41F61B41842D510009562DF /* arrayTest.cpp */,
+				F41F61B61842D5A0009562DF /* array.cpp */,
+				F41F61B71842D5A0009562DF /* array.h */,
 				F47C42371841128500F95D8A /* probe.h */,
 				F47C422D184110C000F95D8A /* Assignment_7.1 */,
 			);
@@ -132,6 +140,8 @@
 				F47C422C184110C000F95D8A /* main.cpp in Sources */,
 				F47C42381841128500F95D8A /* probe.cpp in Sources */,
 				F47C423A184119D100F95D8A /* probeTest.cpp in Sources */,
+				F41F61B51842D510009562DF /* arrayTest.cpp in Sources */,
+				F41F61B81842D5A0009562DF /* array.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +246,7 @@
 				F47C4233184110C000F95D8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
