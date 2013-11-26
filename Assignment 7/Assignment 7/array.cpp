@@ -8,31 +8,76 @@
 
 #include "array.h"
 
+int& Array::operator[] (int x) {
+	return _array[x];
+};
+
 Array::Array(){
 	length = 1;
 	_array = new int[length];
+	_init(_array, length);
 };
 
 Array::~Array(){
 	delete[] _array;
 };
 
-int& Array::operator[] (int x) {
-	return _array[x];
+Array::Array(const Array& ar){
+	length = ar.length;
+	_array = new int[length];
+	_init(_array, length);
+	
+	for(int i = 0; i < length; i++){
+		_array[i] = ar._array[i];
+	}
+};
+
+void Array::_init(int* ar, int size){
+	//ensure that values are initialized to 0
+	for(int i = 0; i < size; i++){
+		ar[i] = 0;
+	};
 };
 
 void Array::putAt(int index, int value){
 	// insert the value at index. The array must expand to
 	// accommodate the new element.
-	
-	
+	if(index > length){
+		int * t = new int[index+1];
+		_init(t, index+1);
+		
+		for(int i = 0; i < length; i++){
+			t[i] = _array[i];
+		}
+		t[index] = value;
+		delete [] _array;
+		_array = t;
+		length = index+1;
+	}
+	else{
+		int * t = new int[length+1];
+		for(int i = 0; i <= length; i++){
+			if(i < index){
+				t[i] = _array[i];
+			}
+			else if(i == index){
+				t[i] = value;
+			}
+			else{
+				t[i] = _array[i-1];
+			}
+		}
+		delete [] _array;
+		_array = t;
+		length++;
+	}	
 };
 
 
 void Array::writeAt(int index, int value){
 	// overwrite the value at index.
-	//_array[index] = value;
 	if(index < length){
+		//_array[index] = value;
 		(*this)[index] = value; //leverage operator overload
 	}
 	else{
@@ -48,6 +93,17 @@ int Array::getAt(int index) const{
 
 void Array::removeAt(int index){
 	// removes the data at array the specified index. The array must contract.
+	int *t = new int[length-1];
+	for(int i = 0; i < length; i++){
+		if(i < index){
+			t[i] = _array[i];
+		}else if(i >= index){
+			t[i] = _array[i+1];
+		}
+	}
+	delete [] _array;
+	_array = t;
+	length--;
 	
 };
 
@@ -59,9 +115,9 @@ std::ostream& operator<<(std::ostream& os, Array& ar){
 	bool first = true;
 	for(int i= 0; i < ar.size(); i++){
 		if(!first){
-			std::cout << ", " <<  ar.getAt(i);
+			os << ", " <<  ar.getAt(i);
 		}else{
-			std::cout << ar.getAt(i);
+			os << ar.getAt(i);
 			first = false;
 		}
 	}

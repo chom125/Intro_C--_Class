@@ -15,9 +15,11 @@ class Array{
 private:
 	int* _array;
 	int length;
+	void _init(int* ar, int size);
 public:
 	Array();
 	~Array();
+	Array(const Array& ar);
 	
 	int& operator[] (int x);
 	int size();
