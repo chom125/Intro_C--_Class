@@ -1,0 +1,37 @@
+// Project Proposal
+
+// The course project is intended to represent real-world project development using
+// C++. You will develop it using a standard software development process. This includes
+// a specification phase, design phase, implementation phase, and test phase.
+
+// You should demonstrate as many of the principles of object-oriented design as possible
+// in your project. Your grade will be based on style, the thoroughness of your design,
+// the correctness of your implementation, and the completeness of your testing.
+
+// The project will be due in three phases: specification, design, and implementation
+// and testing. I recommend making a schedule for yourself and trying to stick to it.
+// This should be just like a compressed version of real-life software development.
+// Good object-oriented design is an iterative process. Experiment with your design
+// while you are in the specification phase, even to the point of thinking about the
+// implementation.
+
+// When choosing your project, consider the following:
+
+// the time you have to do the project;
+// the relevance of the project to the work you do; and
+// whether this project works well for an object-oriented design.
+// Note also that your project should not use proprietary information, since a course
+// project is public domain.
+
+My proposed project is a choose your own adventure style text adventure. The 
+story and options will be loaded from a flat file, either JSON or XML format
+representing the various pages in the story. From a design perspective, it would 
+be nice to abstract out the loading class so that I could pull stories from a
+mongoDB database or some other source and not be locked into a flat file. I'd like
+to implement a custom print function that does a kind of delayed print à la War Games
+and changes the console text color to green. Additional enhancements could be 
+adding a simple gui interface so the end user can click on the story choices
+instead of typing. I've already implemented this using a Javascript MVC framework,
+but an standalone implementation should prove to have a lot of ground work to lay. 
+If this sounds too simple, I could create a more traditional text adventure with 
+an inventory and map that eschews file loading. 
