@@ -3,7 +3,7 @@ Game Layout
 
 Gymnasium 
 
-Office
+Administrative Office
 
 Math Classroom
 
@@ -14,6 +14,7 @@ Home Ec Lab
 Humanities Classroom
 
 Entrance
+Health: 10
 You are standing in front of an old, abandoned high school - your old high school. 
 Your friends insisted on breaking in and taking a look around, but you stayed behind
 because breaking and entering isn't exactly on your bucket list and you had some Amazing Spider-Man
@@ -28,10 +29,66 @@ and consider your options.
 	text answer "The safety of your friends may be up in the air but one thing is certain, Eddy Brock's
 	transformation into Venom is a compelling storyline if ever there was one"
 
+
 Foyer
+Health: 10
 A foul stench fills the air as you enter McKillian High's central foyer. To your left you see a broken trophy 
 display case. Your class was one of the last in the school's 100 year history. The general disrepair of the 
 building gives you an odd eternal feeling; as if the exploits of you and your peers have been steeped in 
 a space of time several magnitudes more extreme than the intervening years would suggest. While the glass is broken, 
-the trophies, photos and keepsakes are mostly in place. Mostly. 
-<player should have option to place trophy found in another room>
+the trophies, photos and keepsakes are mostly in place. You look down into a broken shard of glass and see something 
+odd in the reflection; odd enough to make you turn around. A wisp of smoke trails down the hallway of lockers emanating
+from Mr. Schlocter's old classroom. 
+Go to Mr. Schlocter's Room
+Head in the opposite direction, to the gymnasium
+Read comics
+
+Gymnasium
+The gymnasium is dark and quiet. You experience a strong agoraphobic chill. 
+Call out to friends
+	You receive only echoes in reply. (Health -2)
+Go back to Foyer
+Read comics
+	It's too dark to read. 
+
+Math Classroom
+Health: 8 (maybe)
+A young man sits at the front of the classroom, silently engaged with the textbook in front of him. He looks up 
+slowly to meet your gaze "Make sure your next steps are calculated carefully, <player name>." Next to the 
+sinister student is a glistening mathletes trophy. 
+Blindly accept the presence of the specter
+	Jump right into math challenge
+Question him
+	My name is Alistair Rollins, greatest mathlete these halls have ever seen. Back in my day, why a guy
+	could letter in math and practically run this place. The algorithmically advanced were top dogs who could
+	expect to go to any school they wanted; MIT, Harvard, Yale, you name it. I was gearing up for a full ride
+	at Stanford, when I was electrocuted at home while running experimental stress tests with household
+	blenders. I've wandered these halls for generations as interest in math has waned." Your phone rings. Alistair
+	scowls. 
+	Ignore it
+		"Sorry" Alistair relaxes a little. "I've wandered these halls for generations while gadgets like that
+		beautiful iPhone 5C have proliferated and mathematical prowess has atrophied. I know where your friends are
+		and I won't give them to just some techno sap. Prove you're a mathlete...or a mouse"
+			 ( 6xy^2 + 60x + 7y^2 ) - ( -7xy^2 + 8x^2 + 6y^2 - 4 )
+			 	 13xy^2 - 8x^2 + y^2 + 60x + 4
+			 	 	Alistair smiles at you, points to the trophy without breaking his gaze. "Physical fitness is 
+			 	 	also in decline. A shame." He then explodes. 
+			 	 		Back to Foyer
+			 	 			TODO: continue tomorrow
+			 	 		Check phone
+			 	 		Pick up mathletes trophy (then reduce options to Back to Foyer and Check phone)
+			 	 13xy^2 - 6x^2 + 2y^2 + 20x + 4
+			 	 	Health -6, then repeat question
+			 	 -xy^2 - 6x^2 + 13y^2 + 60x - 4
+			 	 	Health -6, then repeat question
+			 	 Punch the ghost
+			 	 	Health -10
+			 	 	You got beat up by a math dork
+	Pick it up
+		"Chad Wheeler" One of your missing friends
+			Answer it
+				zaps you health -4, then similar verbiage to ignore it
+			Put it back
+				zaps you health -2, then similar verbiage to ignore it
+
+
