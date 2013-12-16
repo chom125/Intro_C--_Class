@@ -13,9 +13,11 @@
 
 class Item{
 public:
-	Item(std::string _name, std::string _description);
+	Item(std::string _name, std::string _description, int _size, bool _isVisible = true);
 	const std::string name;
 	const std::string description;
+	const int size;
+	bool isVisible;
 };
 
 #endif /* defined(__final__item__) */

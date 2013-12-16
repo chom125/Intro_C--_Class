@@ -1,0 +1,37 @@
+Game Layout
+*********************
+
+Gymnasium 
+
+Office
+
+Math Classroom
+
+Computer Lab
+
+Home Ec Lab
+
+Humanities Classroom
+
+Entrance
+You are standing in front of an old, abandoned high school - your old high school. 
+Your friends insisted on breaking in and taking a look around, but you stayed behind
+because breaking and entering isn't exactly on your bucket list and you had some Amazing Spider-Man
+to get through. As you pull your jacket tight around you, you realize that not only can you see your 
+breath, but your friends have been gone for almost 2 solid hours. Packing up your comics, you stand up
+and consider your options.
+
+1. Check your phone
+	text answer "You're a frugal t-mobile user. As such, you find that in a clutch, you have no bars."
+2. Go to foyer
+3. Read comics
+	text answer "The safety of your friends may be up in the air but one thing is certain, Eddy Brock's
+	transformation into Venom is a compelling storyline if ever there was one"
+
+Foyer
+A foul stench fills the air as you enter McKillian High's central foyer. To your left you see a broken trophy 
+display case. Your class was one of the last in the school's 100 year history. The general disrepair of the 
+building gives you an odd eternal feeling; as if the exploits of you and your peers have been steeped in 
+a space of time several magnitudes more extreme than the intervening years would suggest. While the glass is broken, 
+the trophies, photos and keepsakes are mostly in place. Mostly. 
+<player should have option to place trophy found in another room>

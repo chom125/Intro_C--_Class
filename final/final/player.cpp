@@ -7,3 +7,14 @@
 //
 
 #include "player.h"
+
+const int INVENTORY_SIZE = 8;
+
+Player::Player(std::string _name, Room& _currentLocation):
+	name(_name),
+	currentLocation(_currentLocation),
+	inventoryBlocks(INVENTORY_SIZE){};
+
+void Player::pickUp(Item i){
+	
+}

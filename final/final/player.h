@@ -9,13 +9,23 @@
 #ifndef __final__player__
 #define __final__player__
 
-#include <iostream>
+#include <string>
+#include <vector>
+#include "item.h"
+#include "room.h"
 
 class Player{
 public:
-	Player();
+	Player(std::string _name, Room& _currentLocation);
+	void pickUp(Item i);
+	void placeItem(Item i);
+	void goTo(Room& r);
+	void getName();
 private:
-	
+	std::string name;
+	int inventoryBlocks;
+	std::vector<Item> inventory;
+	Room& currentLocation;
 };
 
 #endif /* defined(__final__player__) */

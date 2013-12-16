@@ -27,4 +27,8 @@ namespace delayedPrint{
 			delay(PRINT_DELAY);
 		};
 	};
+	
+	void clear(std::ostream& os){
+		os << std::string( 100, '\n');
+	};
 }

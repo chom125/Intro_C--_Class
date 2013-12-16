@@ -17,6 +17,7 @@ namespace delayedPrint{
 	extern const int PRINT_DELAY;
 	void delay(int msecs);
 	void print(std::ostream& os, const std::string str);
+	void clear(std::ostream& os);
 }
 
 
