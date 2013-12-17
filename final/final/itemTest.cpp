@@ -1,4 +1,5 @@
 #include "item.h"
+#include "inventory.h"
 #include "testHarness.h"
 
 TEST(itemTest, Item){
@@ -20,4 +21,8 @@ TEST(itemTest, Item){
 	CHECK_EQUAL(spacesuit.description, "Outwardly it appears as a regular three piece suit, but it can also be worn in space");
 	CHECK_EQUAL(spacesuit.size, 8);
 	CHECK_EQUAL(spacesuit.isVisible, false);
+}
+
+TEST(inventoryTest, Inventory){
+
 }

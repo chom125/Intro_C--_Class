@@ -17,7 +17,7 @@ public:
 	const std::string name;
 	const std::string description;
 	const int size;
-	bool isVisible;
+	bool isVisible; //can get a hidden item for completing a challenge
 };
 
 #endif /* defined(__final__item__) */

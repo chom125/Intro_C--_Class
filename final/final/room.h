@@ -11,18 +11,20 @@
 
 
 #include <string>
-#include "point.h"
 #include "item.h"
 
 
 class Room{
 public:
-	Room(std::string _name, std::string _text, std::string _state="default");
+	Room(std::string _name, std::string defaultText, std::string _state="default");
 	virtual ~Room();
+	std::string getState();
+	void setState(std::string s);
+	std::string getPrompt();
 protected:
 	std::string state;
 	std::string name;
-	std::string text;
+	std::string prompt;
 };
 
 #endif /* defined(__final__room__) */

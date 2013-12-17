@@ -10,5 +10,13 @@
 #define __final__level__
 
 #include <iostream>
+#include <vector>
+#include "room.h"
+
+class Level{
+public:
+	Level();
+	std::vector<Room> rooms;
+};
 
 #endif /* defined(__final__level__) */

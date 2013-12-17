@@ -8,6 +8,3 @@
 
 #include "level.h"
 
-class Level{
-
-};
