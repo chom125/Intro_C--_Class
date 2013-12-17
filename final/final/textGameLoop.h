@@ -11,6 +11,7 @@
 
 #include <string>
 #include "level.h"
+#include "player.h"
 
 class textGameLoop{
 public:

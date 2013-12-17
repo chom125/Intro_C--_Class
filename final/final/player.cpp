@@ -10,11 +10,7 @@
 
 const int INVENTORY_SIZE = 8;
 
-Player::Player(std::string _name, Room& _currentLocation):
+Player::Player(std::string _name):
 	name(_name),
-	currentLocation(_currentLocation),
 	inventoryBlocks(INVENTORY_SIZE){};
 
-void Player::pickUp(Item i){
-	
-}

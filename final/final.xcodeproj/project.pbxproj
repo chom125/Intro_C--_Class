@@ -18,6 +18,7 @@
 		F423D417185FFC9200C3F173 /* inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F423D415185FFC9200C3F173 /* inventory.cpp */; };
 		F46136FC185CBCF6000B3981 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F46136FB185CBCF6000B3981 /* main.cpp */; };
 		F46136FE185CBCF6000B3981 /* final.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F46136FD185CBCF6000B3981 /* final.1 */; };
+		F4FC53F51860A934004A8D0F /* functionPointerTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4FC53F41860A934004A8D0F /* functionPointerTest.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,6 +54,7 @@
 		F46136F8185CBCF6000B3981 /* final */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = final; sourceTree = BUILT_PRODUCTS_DIR; };
 		F46136FB185CBCF6000B3981 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F46136FD185CBCF6000B3981 /* final.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = final.1; sourceTree = "<group>"; };
+		F4FC53F41860A934004A8D0F /* functionPointerTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = functionPointerTest.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				F423D405185D1CC000C3F173 /* room.h */,
 				F423D412185EAFBE00C3F173 /* textGameLoop.cpp */,
 				F423D413185EAFBE00C3F173 /* textGameLoop.h */,
+				F4FC53F41860A934004A8D0F /* functionPointerTest.cpp */,
 				F423D40D185D1EF800C3F173 /* itemTest.cpp */,
 				F423D415185FFC9200C3F173 /* inventory.cpp */,
 				F423D416185FFC9200C3F173 /* inventory.h */,
@@ -168,6 +171,7 @@
 				F423D411185EAF8900C3F173 /* level.cpp in Sources */,
 				F423D414185EAFBF00C3F173 /* textGameLoop.cpp in Sources */,
 				F423D417185FFC9200C3F173 /* inventory.cpp in Sources */,
+				F4FC53F51860A934004A8D0F /* functionPointerTest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

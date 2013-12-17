@@ -15,16 +15,17 @@
 
 class Player{
 public:
-	Player(std::string _name, Room& _currentLocation);
+	Player(std::string _name);
 	void pickUp(Item i);
 	void placeItem(Item i);
+	Inventory* pGetInventory();
 	void goTo(Room& r);
 	void getName();
 private:
 	std::string name;
 	int inventoryBlocks;
 	Inventory items;
-	Room& currentLocation;
+	Room* currentLocation;
 };
 
 #endif /* defined(__final__player__) */

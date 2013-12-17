@@ -11,20 +11,22 @@
 
 
 #include <string>
-#include "item.h"
+#include "inventory.h"
 
 //should be an abstract base class
 class Room{
 public:
 	Room(std::string _name, std::string defaultText, std::string _state="default");
-	~Room();
+	virtual ~Room();
 	std::string getState();
 	void setState(std::string s);
 	std::string getPrompt();
+	
 protected:
 	std::string state;
 	std::string name;
 	std::string prompt;
+	Inventory items;
 };
 
 #endif /* defined(__final__room__) */

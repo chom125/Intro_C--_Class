@@ -11,6 +11,8 @@
 Room::Room(std::string _name, std::string defaultText, std::string _state):
 name(_name), prompt(defaultText), state(_state){};
 
+Room::~Room(){}
+
 std::string Room::getState(){
 	return state;
 };
