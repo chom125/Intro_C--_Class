@@ -15,12 +15,15 @@
 
 class Inventory{
 public:
+	Inventory();
 	void transferItem(Inventory& dest, Item it);
+	void transferItem(Inventory& dest, std::string name);
 	void addItem(Item it);
 	void removeItem(Item it);
 	void removeItem(std::string name);
 	Item getItem(std::string name);
 	bool contains(std::string name);
+	bool contains(Item item);
 private:
 	std::map<std::string, Item> items;
 };

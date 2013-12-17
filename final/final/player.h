@@ -10,8 +10,7 @@
 #define __final__player__
 
 #include <string>
-#include <vector>
-#include "item.h"
+#include "inventory.h"
 #include "room.h"
 
 class Player{
@@ -24,7 +23,7 @@ public:
 private:
 	std::string name;
 	int inventoryBlocks;
-	std::vector<Item> inventory;
+	Inventory items;
 	Room& currentLocation;
 };
 

@@ -8,6 +8,8 @@
 
 #include "inventory.h"
 
+Inventory::Inventory(){};
+
 void Inventory::addItem(Item it){
 	items.insert(std::pair<std::string, Item>(it.name, it));
 };
@@ -20,13 +22,20 @@ void Inventory::removeItem(std::string name){
 	items.erase(name);
 };
 
-Item Inventory::getItem(std::string name){
-	return items[name];
-};
-
 void Inventory::transferItem(Inventory& dest, Item it){
 	dest.addItem(it);
 	removeItem(it);
+};
+
+void Inventory::transferItem(Inventory& dest, std::string name){
+	std::map<std::string, Item>::iterator it = items.find(name);	
+	dest.addItem(it->second);
+	removeItem(it->first);
+};
+
+Item Inventory::getItem(std::string name){
+	std::map<std::string, Item>::iterator it = items.find(name);
+	return it->second;
 };
 
 bool Inventory::contains(std::string name){
@@ -36,3 +45,12 @@ bool Inventory::contains(std::string name){
 	}
 	return true;
 };
+
+bool Inventory::contains(Item item){
+	std::map<std::string, Item>::iterator it = items.find(item.name);
+	if(it == items.end()){
+		return false;
+	}
+	return true;
+};
+

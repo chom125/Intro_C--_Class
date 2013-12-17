@@ -23,6 +23,71 @@ TEST(itemTest, Item){
 	CHECK_EQUAL(spacesuit.isVisible, false);
 }
 
-TEST(inventoryTest, Inventory){
+TEST(inventoryContainsTest, Inventory){
+	Item shoe = Item("shoe", "A plain pair of brown shoes, barely worn", 1);
+	
+	Inventory a;
+	a.addItem(shoe);
+	
+	CHECK(a.contains(shoe));
+	CHECK(a.contains("shoe"));
+}
 
+TEST(inventoryTransferTest, Inventory){
+	Item shoe = Item("shoe", "A plain pair of brown shoes, barely worn", 1);
+	
+	Inventory a;
+	a.addItem(shoe);
+	
+	Inventory b;
+	
+	CHECK(!b.contains(shoe));
+	
+	a.transferItem(b, shoe);
+	CHECK(!a.contains(shoe));
+	CHECK(b.contains(shoe));
+}
+
+TEST(inventoryStringTransferTest, Inventory){
+	Item shoe = Item("shoe", "A plain pair of brown shoes, barely worn", 1);	
+	Inventory a;
+	a.addItem(shoe);
+	
+	Inventory b;
+	
+	a.transferItem(b, "shoe");
+	CHECK(!a.contains(shoe));
+	CHECK(b.contains(shoe));	
+}
+
+TEST(inventoryRemoveTest, Inventory){
+	Item shoe = Item("shoe", "A plain pair of brown shoes, barely worn", 1);
+	
+	Inventory a;
+	a.addItem(shoe);
+	
+	CHECK(a.contains(shoe));
+	CHECK(a.contains("shoe"));
+	
+	a.removeItem(shoe);
+	CHECK(!a.contains(shoe));
+	CHECK(!a.contains("shoe"));
+	
+	a.addItem(shoe);
+	CHECK(a.contains(shoe));
+	CHECK(a.contains("shoe"));
+	
+	a.removeItem("shoe");
+	CHECK(!a.contains(shoe));
+	CHECK(!a.contains("shoe"));
+}
+
+TEST(getItemTest, Inventor){
+	Item shoe = Item("shoe", "A plain pair of brown shoes, barely worn", 1);
+	
+	Inventory a;
+	a.addItem(shoe);
+	
+	Item shoe2 = a.getItem("shoe");
+	CHECK_EQUAL("shoe", shoe2.name);
 }

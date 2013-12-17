@@ -10,7 +10,7 @@
 #define __final__textGameLoop__
 
 #include <string>
-#include <iostream>
+#include "level.h"
 
 class textGameLoop{
 public:
@@ -19,8 +19,7 @@ public:
 	void end();
 private:
 	std::string input;
-	bool isFinished;
-	
+	bool isFinished;	
 };
 
 #endif /* defined(__final__textGameLoop__) */
