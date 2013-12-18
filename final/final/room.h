@@ -18,7 +18,9 @@ typedef void (*fptr)(); //function pointer
 
 class Room{
 public:
+	Room();
 	Room(std::string _name, std::string defaultText, std::string _state="default");
+	Room(const Room& r);
 	std::string getState();
 	void setState(std::string s);
 	static void notFound();
@@ -29,9 +31,9 @@ public:
 	std::string getCommands();
 	void addCommand(std::string command, fptr action);
 	void removeCommand(std::string s);
-	fptr nf;
+	void clearCommands();
 	
-protected:
+private:
 	std::string state;
 	std::string name;
 	std::string prompt;

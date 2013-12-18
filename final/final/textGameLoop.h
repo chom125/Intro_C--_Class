@@ -10,6 +10,7 @@
 #define __final__textGameLoop__
 
 #include <string>
+#include <vector>
 #include "player.h"
 #include "room.h"
 #include "delayedPrint.h"
@@ -18,7 +19,7 @@ class textGameLoop{
 public:
 	textGameLoop(Player _player);
 	void begin();
-	Player getPlayer();
+	Player* pGetPlayer();
 	Room getRoom(std::string rName);
 	void getUserInput();
 	void outputRoomPrompt();

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F400144E186172E600F7698E /* playerTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F400144D186172E600F7698E /* playerTest.cpp */; };
 		F423D3FB185D01C900C3F173 /* libCppUnitLite.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F423D3FA185D01C900C3F173 /* libCppUnitLite.dylib */; };
 		F423D3FE185D0F7700C3F173 /* delayedPrint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F423D3FC185D0F7700C3F173 /* delayedPrint.cpp */; };
 		F423D406185D1CC100C3F173 /* room.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F423D404185D1CC000C3F173 /* room.cpp */; };
@@ -16,6 +17,8 @@
 		F423D414185EAFBF00C3F173 /* textGameLoop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F423D412185EAFBE00C3F173 /* textGameLoop.cpp */; };
 		F423D417185FFC9200C3F173 /* inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F423D415185FFC9200C3F173 /* inventory.cpp */; };
 		F435B1721861426000F2EC1F /* roomTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F435B1711861426000F2EC1F /* roomTest.cpp */; };
+		F435B1741861561900F2EC1F /* textGameLoopTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F435B1731861561900F2EC1F /* textGameLoopTest.cpp */; };
+		F435B17618615D8800F2EC1F /* testLevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F435B17518615D8800F2EC1F /* testLevel.cpp */; };
 		F46136FC185CBCF6000B3981 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F46136FB185CBCF6000B3981 /* main.cpp */; };
 		F46136FE185CBCF6000B3981 /* final.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F46136FD185CBCF6000B3981 /* final.1 */; };
 		F4FC53F51860A934004A8D0F /* functionPointerTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4FC53F41860A934004A8D0F /* functionPointerTest.cpp */; };
@@ -35,6 +38,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F400144D186172E600F7698E /* playerTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = playerTest.cpp; sourceTree = "<group>"; };
 		F423D3FA185D01C900C3F173 /* libCppUnitLite.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libCppUnitLite.dylib; path = ../../../../../../usr/local/lib/libCppUnitLite.dylib; sourceTree = "<group>"; };
 		F423D3FC185D0F7700C3F173 /* delayedPrint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = delayedPrint.cpp; sourceTree = "<group>"; };
 		F423D3FD185D0F7700C3F173 /* delayedPrint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = delayedPrint.h; sourceTree = "<group>"; };
@@ -50,6 +54,8 @@
 		F423D415185FFC9200C3F173 /* inventory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = inventory.cpp; sourceTree = "<group>"; };
 		F423D416185FFC9200C3F173 /* inventory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inventory.h; sourceTree = "<group>"; };
 		F435B1711861426000F2EC1F /* roomTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = roomTest.cpp; sourceTree = "<group>"; };
+		F435B1731861561900F2EC1F /* textGameLoopTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = textGameLoopTest.cpp; sourceTree = "<group>"; };
+		F435B17518615D8800F2EC1F /* testLevel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testLevel.cpp; sourceTree = "<group>"; };
 		F46136F8185CBCF6000B3981 /* final */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = final; sourceTree = BUILT_PRODUCTS_DIR; };
 		F46136FB185CBCF6000B3981 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F46136FD185CBCF6000B3981 /* final.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = final.1; sourceTree = "<group>"; };
@@ -98,13 +104,16 @@
 				F423D40A185D1D2200C3F173 /* item.cpp */,
 				F423D40B185D1D2200C3F173 /* item.h */,
 				F423D405185D1CC000C3F173 /* room.h */,
+				F435B17518615D8800F2EC1F /* testLevel.cpp */,
 				F423D412185EAFBE00C3F173 /* textGameLoop.cpp */,
 				F423D413185EAFBE00C3F173 /* textGameLoop.h */,
 				F4FC53F41860A934004A8D0F /* functionPointerTest.cpp */,
 				F423D40D185D1EF800C3F173 /* itemTest.cpp */,
+				F400144D186172E600F7698E /* playerTest.cpp */,
 				F423D415185FFC9200C3F173 /* inventory.cpp */,
 				F423D416185FFC9200C3F173 /* inventory.h */,
 				F435B1711861426000F2EC1F /* roomTest.cpp */,
+				F435B1731861561900F2EC1F /* textGameLoopTest.cpp */,
 			);
 			path = final;
 			sourceTree = "<group>";
@@ -170,6 +179,9 @@
 				F423D417185FFC9200C3F173 /* inventory.cpp in Sources */,
 				F4FC53F51860A934004A8D0F /* functionPointerTest.cpp in Sources */,
 				F435B1721861426000F2EC1F /* roomTest.cpp in Sources */,
+				F435B1741861561900F2EC1F /* textGameLoopTest.cpp in Sources */,
+				F435B17618615D8800F2EC1F /* testLevel.cpp in Sources */,
+				F400144E186172E600F7698E /* playerTest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

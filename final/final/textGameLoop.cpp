@@ -11,11 +11,20 @@
 
 textGameLoop::textGameLoop(Player _player):
 	player(_player),
-	isFinished(false){};
+	isFinished(false){
+		//take a reference to a vector as an argument
+		//look for a room named begin
+			// if not found, throw exception
+		//player.goto(*begin)
+	};
 
 Room textGameLoop::getRoom(std::string rName){
 	std::map<std::string, Room>::iterator it = rooms.find(rName);
 	return it->second;
+};
+
+Player* textGameLoop::pGetPlayer(){
+	return &player;
 };
 
 
@@ -25,7 +34,10 @@ void textGameLoop::getUserInput(){
 };
 
 void textGameLoop::outputRoomPrompt(){
-	delayedPrint::print(std::cout, player.pGetCurrentLocation()->getPrompt());
+	Room* playerLoc = player.pGetCurrentLocation();
+	std::string prompt = playerLoc->getPrompt();
+//	std::cout << prompt;
+//	delayedPrint::print(std::cout, prompt);
 };
 
 void textGameLoop::outputRoomCommands(){
@@ -43,16 +55,18 @@ void textGameLoop::addRoom(Room r){
 
 void textGameLoop::win(){
 	isFinished = true;
+	delayedPrint::clear(std::cout);
+	delayedPrint::print(std::cout, "You've won!");
 }
 
 void textGameLoop::begin(){
-	while(!isFinished){
+//	while(!isFinished){
 		delayedPrint::clear(std::cout);
 		outputRoomPrompt();
-		delayedPrint::print(std::cout, "\n\navailable commands: \n");
-		outputRoomCommands();
-		delayedPrint::print(std::cout, "\n\n");
-		getUserInput();
-		executeRoomCommand();
-	};
+//		delayedPrint::print(std::cout, "\n\navailable commands: \n");
+//		//outputRoomCommands();
+//		delayedPrint::print(std::cout, "\n\n");
+//		//getUserInput();
+//		//executeRoomCommand();
+//	};
 };

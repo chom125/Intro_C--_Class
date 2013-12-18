@@ -51,3 +51,37 @@ TEST(roomCommandTest, room){
 	(*command)(); //r.notFound called
 	CHECK_EQUAL("testFunc called.testFunc2 called.testFunc3 called.", testFuncOutput);
 };
+
+
+void roomCopyTest(Room room){
+	fptr pRoomCommand = room.getCommand("func1");
+	(*pRoomCommand)();
+	pRoomCommand = room.getCommand("func2");
+	(*pRoomCommand)();
+	pRoomCommand = room.getCommand("func3");
+	(*pRoomCommand)();
+};
+
+TEST(roomCopyTest, Room){
+	testFuncOutput = "";
+	
+	Room r = Room("test room", "a big spooky dungeon");
+	
+	r.addCommand("func1", testFunc);
+	r.addCommand("func2", testFunc2);
+	r.addCommand("func3", testFunc3);
+	
+	roomCopyTest(r);
+	CHECK_EQUAL("testFunc called.testFunc2 called.testFunc3 called.", testFuncOutput);
+};
+
+
+TEST(roomCommandListTest, Room){
+	Room r = Room("test room", "a big spooky dungeon");
+	
+	r.addCommand("func1", testFunc);
+	r.addCommand("func2", testFunc2);
+	r.addCommand("func3", testFunc3);
+	
+	CHECK_EQUAL("func1\nfunc2\nfunc3\n", r.getCommands());
+};

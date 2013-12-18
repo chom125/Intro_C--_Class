@@ -15,8 +15,11 @@
 class Player{
 public:
 	Player(std::string _name);
+	Player(const Player& p);
+	~Player();
 	void pickUp(Item i);
 	void placeItem(Item i);
+	Inventory getInventory();
 	Inventory* pGetInventory();
 	void goTo(Room* r);
 	Room* pGetCurrentLocation();
