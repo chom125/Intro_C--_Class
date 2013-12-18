@@ -13,9 +13,9 @@
 		F423D409185D1CD300C3F173 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F423D407185D1CD300C3F173 /* player.cpp */; };
 		F423D40C185D1D2200C3F173 /* item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F423D40A185D1D2200C3F173 /* item.cpp */; };
 		F423D40E185D1EF800C3F173 /* itemTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F423D40D185D1EF800C3F173 /* itemTest.cpp */; };
-		F423D411185EAF8900C3F173 /* level.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F423D40F185EAF8900C3F173 /* level.cpp */; };
 		F423D414185EAFBF00C3F173 /* textGameLoop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F423D412185EAFBE00C3F173 /* textGameLoop.cpp */; };
 		F423D417185FFC9200C3F173 /* inventory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F423D415185FFC9200C3F173 /* inventory.cpp */; };
+		F435B1721861426000F2EC1F /* roomTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F435B1711861426000F2EC1F /* roomTest.cpp */; };
 		F46136FC185CBCF6000B3981 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F46136FB185CBCF6000B3981 /* main.cpp */; };
 		F46136FE185CBCF6000B3981 /* final.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F46136FD185CBCF6000B3981 /* final.1 */; };
 		F4FC53F51860A934004A8D0F /* functionPointerTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4FC53F41860A934004A8D0F /* functionPointerTest.cpp */; };
@@ -45,12 +45,11 @@
 		F423D40A185D1D2200C3F173 /* item.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = item.cpp; sourceTree = "<group>"; };
 		F423D40B185D1D2200C3F173 /* item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = item.h; sourceTree = "<group>"; };
 		F423D40D185D1EF800C3F173 /* itemTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = itemTest.cpp; sourceTree = "<group>"; };
-		F423D40F185EAF8900C3F173 /* level.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = level.cpp; sourceTree = "<group>"; };
-		F423D410185EAF8900C3F173 /* level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = level.h; sourceTree = "<group>"; };
 		F423D412185EAFBE00C3F173 /* textGameLoop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = textGameLoop.cpp; sourceTree = "<group>"; };
 		F423D413185EAFBE00C3F173 /* textGameLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = textGameLoop.h; sourceTree = "<group>"; };
 		F423D415185FFC9200C3F173 /* inventory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = inventory.cpp; sourceTree = "<group>"; };
 		F423D416185FFC9200C3F173 /* inventory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inventory.h; sourceTree = "<group>"; };
+		F435B1711861426000F2EC1F /* roomTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = roomTest.cpp; sourceTree = "<group>"; };
 		F46136F8185CBCF6000B3981 /* final */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = final; sourceTree = BUILT_PRODUCTS_DIR; };
 		F46136FB185CBCF6000B3981 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F46136FD185CBCF6000B3981 /* final.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = final.1; sourceTree = "<group>"; };
@@ -105,8 +104,7 @@
 				F423D40D185D1EF800C3F173 /* itemTest.cpp */,
 				F423D415185FFC9200C3F173 /* inventory.cpp */,
 				F423D416185FFC9200C3F173 /* inventory.h */,
-				F423D40F185EAF8900C3F173 /* level.cpp */,
-				F423D410185EAF8900C3F173 /* level.h */,
+				F435B1711861426000F2EC1F /* roomTest.cpp */,
 			);
 			path = final;
 			sourceTree = "<group>";
@@ -168,10 +166,10 @@
 				F423D409185D1CD300C3F173 /* player.cpp in Sources */,
 				F423D40C185D1D2200C3F173 /* item.cpp in Sources */,
 				F423D40E185D1EF800C3F173 /* itemTest.cpp in Sources */,
-				F423D411185EAF8900C3F173 /* level.cpp in Sources */,
 				F423D414185EAFBF00C3F173 /* textGameLoop.cpp in Sources */,
 				F423D417185FFC9200C3F173 /* inventory.cpp in Sources */,
 				F4FC53F51860A934004A8D0F /* functionPointerTest.cpp in Sources */,
+				F435B1721861426000F2EC1F /* roomTest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

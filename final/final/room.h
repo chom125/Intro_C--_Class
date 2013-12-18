@@ -11,22 +11,33 @@
 
 
 #include <string>
+#include <map>
 #include "inventory.h"
 
-//should be an abstract base class
+typedef void (*fptr)(); //function pointer
+
 class Room{
 public:
 	Room(std::string _name, std::string defaultText, std::string _state="default");
-	virtual ~Room();
 	std::string getState();
 	void setState(std::string s);
+	static void notFound();
 	std::string getPrompt();
+	std::string getName();
+	void setPrompt(std::string s);
+	fptr getCommand(std::string);
+	std::string getCommands();
+	void addCommand(std::string command, fptr action);
+	void removeCommand(std::string s);
+	fptr nf;
 	
 protected:
 	std::string state;
 	std::string name;
 	std::string prompt;
+	std::map<std::string, fptr> commands;
 	Inventory items;
+	
 };
 
 #endif /* defined(__final__room__) */

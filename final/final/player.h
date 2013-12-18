@@ -10,7 +10,6 @@
 #define __final__player__
 
 #include <string>
-#include "inventory.h"
 #include "room.h"
 
 class Player{
@@ -19,7 +18,8 @@ public:
 	void pickUp(Item i);
 	void placeItem(Item i);
 	Inventory* pGetInventory();
-	void goTo(Room& r);
+	void goTo(Room* r);
+	Room* pGetCurrentLocation();
 	void getName();
 private:
 	std::string name;

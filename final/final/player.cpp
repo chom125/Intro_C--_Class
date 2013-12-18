@@ -14,3 +14,14 @@ Player::Player(std::string _name):
 	name(_name),
 	inventoryBlocks(INVENTORY_SIZE){};
 
+Inventory* Player::pGetInventory(){
+	return &items;
+};
+
+void Player::goTo(Room* r){
+	currentLocation = r;
+};
+
+Room* Player::pGetCurrentLocation(){
+	return currentLocation;
+};

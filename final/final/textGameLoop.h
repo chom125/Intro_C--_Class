@@ -10,17 +10,27 @@
 #define __final__textGameLoop__
 
 #include <string>
-#include "level.h"
 #include "player.h"
+#include "room.h"
+#include "delayedPrint.h"
 
 class textGameLoop{
 public:
-	textGameLoop();
+	textGameLoop(Player _player);
 	void begin();
-	void end();
+	Player getPlayer();
+	Room getRoom(std::string rName);
+	void getUserInput();
+	void outputRoomPrompt();
+	void outputRoomCommands();
+	void executeRoomCommand();
+	void addRoom(Room r);
+	void win();
 private:
 	std::string input;
-	bool isFinished;	
+	bool isFinished;
+	Player player;
+	std::map<std::string, Room> rooms;
 };
 
 #endif /* defined(__final__textGameLoop__) */
