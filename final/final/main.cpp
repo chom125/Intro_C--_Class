@@ -12,9 +12,8 @@
 #include "textGameLoop.h"
 #include "testLevel.h"
 
-//change to true to run tests
-const bool runTests = true;
-extern textGameLoop gymLevel;
+const bool runTests = false; //change to true to run tests
+extern textGameLoop testLevel;
 
 int main(int argc, const char * argv[])
 {	
@@ -23,7 +22,7 @@ int main(int argc, const char * argv[])
 		TestRegistry::runAllTests(tr);
 	}else{
         gameInit();
-		gymLevel.begin();
+		testLevel.begin();
 	}
     
 //	// force console screen to hold
