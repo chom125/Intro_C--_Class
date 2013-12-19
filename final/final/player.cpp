@@ -13,9 +13,7 @@ const int INVENTORY_SIZE = 8;
 
 Player::Player(std::string _name):
 	name(_name),
-	inventoryBlocks(INVENTORY_SIZE){
-		currentLocation = new Room();
-	};
+	inventoryBlocks(INVENTORY_SIZE){};
 
 Inventory* Player::pGetInventory(){
 	return &items;
@@ -27,9 +25,7 @@ Inventory Player::getInventory(){
 };
 
 void Player::goTo(Room* r){
-	delete currentLocation;
-	currentLocation = new Room();
-	*currentLocation = *r;
+	currentLocation = r;
 };
 
 Room* Player::pGetCurrentLocation(){
@@ -37,14 +33,12 @@ Room* Player::pGetCurrentLocation(){
 };
 
 Player::Player(const Player& p){
-//	std::cout << "in copy constructor" << std::endl;
 	name = p.name;
 	inventoryBlocks = p.inventoryBlocks;
 	items = p.items;
-	currentLocation = new Room();
-	*currentLocation = *p.currentLocation;
+	currentLocation = p.currentLocation;
 };
 
 Player::~Player(){
-	delete currentLocation;
+	//delete currentLocation;
 };

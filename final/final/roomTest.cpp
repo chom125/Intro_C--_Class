@@ -62,18 +62,18 @@ void roomCopyTest(Room room){
 	(*pRoomCommand)();
 };
 
-TEST(roomCopyTest, Room){
-	testFuncOutput = "";
-	
-	Room r = Room("test room", "a big spooky dungeon");
-	
-	r.addCommand("func1", testFunc);
-	r.addCommand("func2", testFunc2);
-	r.addCommand("func3", testFunc3);
-	
-	roomCopyTest(r);
-	CHECK_EQUAL("testFunc called.testFunc2 called.testFunc3 called.", testFuncOutput);
-};
+//TEST(roomCopyTest, Room){
+//	testFuncOutput = "";
+//	
+//	Room r = Room("test room", "a big spooky dungeon");
+//	
+//	r.addCommand("func1", testFunc);
+//	r.addCommand("func2", testFunc2);
+//	r.addCommand("func3", testFunc3);
+//	
+//	roomCopyTest(r);
+//	CHECK_EQUAL("testFunc called.testFunc2 called.testFunc3 called.", testFuncOutput);
+//};
 
 
 TEST(roomCommandListTest, Room){

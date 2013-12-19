@@ -10,6 +10,7 @@
 #include <iostream>
 void Room::notFound(){
 	//if the command is not found, do nothing
+    //std::cout << "not found called" << std::endl;
 };
 Room::Room(){};
 Room::Room(std::string _name, std::string defaultText, std::string _state):
@@ -21,8 +22,10 @@ Room::Room(const Room& r){
 	state = r.state;
 	name = r.name;
 	prompt = r.prompt;
-	commands = r.commands;
+	commands = r.commands; //suspect
 	items = r.items;
+    
+    std::cout << "Room copy constructor called" << std::endl;
 };
 
 std::string Room::getState(){

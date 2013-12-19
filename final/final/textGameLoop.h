@@ -17,21 +17,22 @@
 
 class textGameLoop{
 public:
-	textGameLoop(Player _player);
+	textGameLoop(Player* _player);
 	void begin();
 	Player* pGetPlayer();
-	Room getRoom(std::string rName);
+	Room* getRoom(std::string rName);
 	void getUserInput();
 	void outputRoomPrompt();
 	void outputRoomCommands();
 	void executeRoomCommand();
-	void addRoom(Room r);
+	void addRoom(Room* r);
+    void movePlayer(std::string roomName);
 	void win();
 private:
 	std::string input;
 	bool isFinished;
-	Player player;
-	std::map<std::string, Room> rooms;
+	Player* player;
+	std::map<std::string, Room*> rooms;
 };
 
 #endif /* defined(__final__textGameLoop__) */
